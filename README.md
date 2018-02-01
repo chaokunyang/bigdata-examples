@@ -51,12 +51,12 @@ The scripts in awesome-bigdata-samples/bin provides some useful small operations
 Flink jobs containing Java 8 lambdas with generics cannot be compiled with IntelliJ IDEA at the moment. What you have to do is to build the project on the cli using `mvn compile` with **Eclipse JDT compiler**. Once the program has been built via maven, you can also run it from within IntelliJ.
 
 
-##Build
+## Build
 ```shell
 mvn clean package -DskipTest -Pbuild-jar
 ```
 
-##Contribute
+## Contribute
 - Source Code: https://github.com/chaokunyang/awesome-bigdata-samples
 - Issue Tracker: https://github.com/chaokunyang/awesome-bigdata-samples/issues
 
