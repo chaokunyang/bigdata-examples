@@ -425,8 +425,8 @@ def get_conf():
         },
         'yarn_app': {
             'streaming_apps': {
-                'com.timeyang.spark.streaming.WordCountApp': os.getcwd()+'/wordCountSparksh',
-                'com.timeyang.flink.streaming.WordCountApp': os.getcwd()+'/wordCountFlinksh'
+                'com.timeyang.spark.streaming.WordCountApp': os.getcwd()+'/wordCountSpark.sh',
+                'com.timeyang.flink.streaming.WordCountApp': os.getcwd()+'/wordCountFlink.sh'
             }
         }
 
