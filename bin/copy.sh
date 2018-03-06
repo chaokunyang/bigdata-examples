@@ -12,7 +12,7 @@ fi
 function mkdirIfAbsent {
   target_host=$1
   target_dir=$2
-  if ssh $target_host "[ ! -d ${target_dir} ]" < /dev/null; then
+  if ssh $target_host "! test -d ${target_dir}" < /dev/null; then
     ssh -Tq -p 22 ${target_host} "mkdir -p $target_dir" < /dev/null
     if [$? -eq 0]; then
       echo "$target_dir created"
